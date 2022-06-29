@@ -1,0 +1,537 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.UserloginHolder{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    
+}
+
+.dimBackground{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 98, 178, 0.751);
+    
+}
+
+.signUpoffscreen,.login_offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.signUpErrMsg,.loginErrMsg {
+    background-color: rgb(255, 9, 50);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.UserloginContainer {
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    height: fit-content;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: none;
+    transform: 0;
+    
+}
+
+
+.UserLoginFormSide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+
+}
+.UserLoginFormSide{
+    background-color: rgba(156, 195, 213, 0.488);
+}
+
+.userLoginHeader{
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.userLoginHeader h2,
+.userCreateAccHeader h2{
+    display: flex;
+    width: fit-content;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin: 6px 10px;
+    color: rgb(255, 255, 255);
+    transform: 0;
+}
+.userLoginHeader span{
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    margin: 3px 20px;
+    transform: 0;
+    
+}
+
+.userCreateAccHeader{
+    width: 100%;
+    height: 30%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.loginTypeSwitch{
+    width: fit-content;
+    height: 40px;
+    padding: 4px;
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.loginTypeSwitch label{
+    margin: 0px 6px;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 254, 254);
+}
+.loginForm,
+.SignupForm
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm form,
+.SignupForm form{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.ant-row.ant-form-item{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    margin-bottom: 8px;
+}
+
+
+.ant-input-affix-wrapper.ant-input-affix-wrapper-status-success,
+.ant-input-affix-wrapper{
+    height: 45px;
+    width: 100%;
+    transform: 0;
+}
+
+
+.SignupForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.userLoginFormButton {
+    background-color: #853aa7;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+}
+.userLoginFormButton p{
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+
+}
+.signUpWithGoogle{
+    display: flex;
+    width: 30%;
+    height: fit-content;
+    padding: 4px;
+    margin: 4px auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 2px;
+
+}
+
+.signUpWithGoogle img{
+    transform: 0;
+
+}
+.signUpWithGoogle img:hover{
+    transform: scale(1.1);
+    transition: all ease-out 0.2s;
+}
+
+.signUpWithGoogle:hover{
+    cursor: pointer;
+}
+
+
+
+
+.goToRegister{
+    font-size: 11px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: blue;
+    font-style: italic;
+    cursor: pointer;
+}
+.ant-btn.ant-btn-primary.userLoginFormButton,
+.ant-btn.ant-btn-primary.login-form-button {
+    background-color: #853aa7;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+}
+.ant-btn.ant-btn-primary.login-form-button p{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* redundunt but required code , needs refactoring */
+/* body{
+    padding: 0;
+    margin: 0;
+}
+
+.login{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(103, 191, 221);
+}
+
+.loginContainer{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.header{
+    width: 100%;
+    height: 45%;
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-right-radius: 55%;
+    border-bottom-left-radius: 2%;
+    transform: 0;
+    
+}
+.header h1{
+    color: white;
+    font-size: 40px;
+    font-family:cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+}
+.header h2{
+    color: white;
+    font-size: 35px;
+    font-family: cursive;
+    margin: 10px 20px;
+}
+.loginTypeSwitch{
+    width: 100%;
+    height: 40px;
+    padding: 4px;
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.loginTypeSwitch label{
+    margin: 0px 6px;
+    font-size: 12px;
+    column-rule: rgba(57, 51, 51, 0.379);
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.login-form-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form-button p{
+    font-size: 15px;
+    font-family: cursive;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+
+}
+
+#normal_login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    height: 80%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.ant-row.ant-form-item{
+    margin-bottom: 7px;
+    width: 70%;
+}
+.ant-row.ant-form-item.ant-form-item-with-help.ant-form-item-has-error{
+    height: 40px;
+    margin-bottom: 9px;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.ant-form-item-explain-error {
+    font-size: 11px;
+}
+
+.goToRegister{
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: lighter;
+    color: blue;
+    cursor: pointer;
+} */
+
+@media(max-width: 1000px){
+    .UserloginContainer {
+        width: 40%;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+        
+        
+    }
+
+    .userLoginHeader h2,
+    .userCreateAccHeader h2{
+        font-size: 23px;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+    }
+    .userLoginHeader span{
+        font-size: 11px;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+        
+    }
+}
+@media(max-width: 650px){
+    .UserloginContainer {
+        width: 50%;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+        
+        
+    }
+    .ant-input-affix-wrapper.ant-input-affix-wrapper-status-success,
+    .ant-input-affix-wrapper{
+    height: 37px;
+    width: 100%;
+    transform: scaleX(1.1);
+    transition: all ease 1s;
+    
+}
+
+    .userLoginHeader h2,
+    .userCreateAccHeader h2{
+        font-size: 21px;       
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+    }
+    .userLoginHeader span{
+        font-size: 10px;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+        
+    }
+
+}
+
+@media(max-width: 440px){
+    .userLoginHeader h2,
+    .userCreateAccHeader h2{
+        font-size: 19px;       
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+    }
+    .userLoginHeader span{
+        font-size: 8px;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+        
+    }
+    .UserloginContainer {
+        width: 70%;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+        
+        
+    }
+    .ant-input-affix-wrapper.ant-input-affix-wrapper-status-success,
+    .ant-input-affix-wrapper{
+    height: 37px;
+    width: 100%;
+    transform: scaleX(1.1);
+    transition: all ease 1s;
+    
+}
+}
+
+@media(max-width: 280px){
+    .userLoginHeader h2,
+    .userCreateAccHeader h2{
+        font-size: 15px;       
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+    }
+    .userLoginHeader span{
+        font-size: 6px;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+        
+    }
+    .UserloginContainer {
+        width: 90%;
+        transform: scaleX(1.1);
+        transition: all ease 1s;
+        
+        
+    }
+    .ant-input-affix-wrapper.ant-input-affix-wrapper-status-success,
+    .ant-input-affix-wrapper{
+    height: 30px;
+    width: 100%;
+    transform: scaleX(1.1);
+    transition: all ease 1s;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

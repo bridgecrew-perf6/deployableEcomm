@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.productCard{
+    display: flex;
+    width: 220px;
+    height: 260px;
+    padding: 2px;
+    margin: 5px;
+    border: 1px solid #172bec21;
+    border-radius: 2px;
+    transform: 0;
+}
+
+.productCard:hover{
+    border: 1px solid #0f22cb5c;
+    transform: scale(1.1);
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+}
+
+
+.productCardWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+   
+
+}
+.productCardHeader{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+}
+
+.productCardHeader p{
+    display: flex;
+    width: 100%;
+    padding: 4px;
+    margin: 0px 10px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    color: darkblue;
+
+}
+/* .productCardTitle{
+    justify-content: center;
+    display: flex;
+    align-items: right;
+    font-size: 20px;
+    font-weight: bolder;
+}
+ */
+
+
+
+.productImageHolder{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    overflow: hidden;
+}
+
+.productImageHolder img{
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    margin: 0;
+    object-fit: contain; 
+    transform: 0;  
+    overflow: hidden;
+}
+/* .productImageHolder img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.4s;
+    overflow: hidden;
+
+} */
+.productCardBody{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.productCardBody span svg{
+    font-size: 15px;
+}
+
+.productCardBody p{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin: 4px 10px;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    color: green;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+/* media query for responsiveness */
+
+@media(max-width:910px ){
+   .productCard{    
+    width: 240px;
+    height: 260px;
+    
+   }
+   
+.productCardHeader p{  
+    font-size: 11px;
+}
+
+    .productCardBody p{    
+        font-size: 12px;
+       
+    }
+    .productCardBody span svg{
+        font-size: 14px;
+    }
+        
+    .productImageHolder img{      
+        width: 90%;
+        height: 90%;
+    
+       
+    }
+
+    
+}
+@media(max-width:760px){
+    .productCard{    
+        width: 220px;
+        height: 240px;
+        
+       }
+       
+    .productCardHeader p{  
+        font-size: 10px;
+    }
+    
+        .productCardBody p{    
+            font-size: 11px;
+           
+        }
+        .productCardBody span svg{
+            font-size: 13px;
+        }
+            
+        .productImageHolder img{      
+            width: 80%;
+            height: 80%;
+        
+           
+        }
+    
+}
+
+
+
+@media(max-width:695px){
+    .productCard{    
+        width: 200px;
+        height: 220px;
+        
+       }
+       
+    .productCardHeader p{  
+        font-size: 10px;
+    }
+    
+        .productCardBody p{    
+            font-size: 11px;
+           
+        }
+        .productCardBody span svg{
+            font-size: 13px;
+        }
+            
+        .productImageHolder img{      
+            width: 90%;
+            height: 90%;
+        
+           
+        }
+    
+        
+}
+@media(max-width:635px){
+    .productCard{    
+        width: 180px;
+        height: 200px;
+        
+       }
+       
+    .productCardHeader p{  
+        font-size: 9px;
+    }
+    
+        .productCardBody p{    
+            font-size: 10px;
+           
+        }
+        .productCardBody span svg{
+            font-size: 12px;
+        }
+            
+        .productImageHolder img{      
+            width: 80%;
+            height: 80%;
+        
+           
+        }
+    
+}
+
+@media(max-width:610px){
+    .productCard{    
+        width: 160px;
+        height: 170px;
+        
+       }
+       
+    .productCardHeader p{  
+        font-size: 9px;
+    }
+    
+        .productCardBody p{    
+            font-size: 10px;
+           
+        }
+        .productCardBody span svg{
+            font-size: 12px;
+        }
+            
+        .productImageHolder img{      
+            width: 90%;
+            height: 90%;
+        
+           
+        }
+    
+}
+
+
+@media(max-width:550px){
+    .productCard{    
+        width: 140px;
+        height: 160px;
+        padding: 0;
+        
+       }
+       
+    .productCardHeader p{  
+        font-size: 8.5px;
+    }
+    
+        .productCardBody p{    
+            font-size: 9px;
+           
+        }
+        .productCardBody span svg{
+            font-size: 11px;
+        }
+            
+        .productImageHolder img{      
+            width: 80%;
+            height: 80%;
+        
+           
+        }
+    
+}
+
+
+
+
